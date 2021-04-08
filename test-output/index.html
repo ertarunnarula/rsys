@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,11 +115,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="practice.Testng2" class="method navigator-link" hash-for-method="test03_third">test03_third</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="practice.Testng3" class="method navigator-link" hash-for-method="test05_fifth">test05_fifth</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -150,13 +145,6 @@
               <span class="class-name">practice.Testng3</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test05_fifth">
-                  </a> <!-- test05_fifth -->
-                  <span class="method-name">test05_fifth</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="test06_sixth">
@@ -228,7 +216,11 @@
   &lt;/test&gt; &lt;!-- Test --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;practice.Testng3&quot;/&gt;
+      &lt;class name=&quot;practice.Testng3&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;test05_fifth&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- practice.Testng3 --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test2 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -271,36 +263,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test01_first')
 data.setCell(0, 2, 'practice.Testng1')
-data.setCell(0, 3, 9);
+data.setCell(0, 3, 12);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test05_fifth')
-data.setCell(1, 2, 'practice.Testng3')
+data.setCell(1, 1, 'test02_second')
+data.setCell(1, 2, 'practice.Testng1')
 data.setCell(1, 3, 2);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test06_sixth')
-data.setCell(2, 2, 'practice.Testng3')
+data.setCell(2, 1, 'test03_third')
+data.setCell(2, 2, 'practice.Testng2')
 data.setCell(2, 3, 2);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'test_04fourth')
-data.setCell(3, 2, 'practice.Testng2')
-data.setCell(3, 3, 1);
+data.setCell(3, 1, 'test06_sixth')
+data.setCell(3, 2, 'practice.Testng3')
+data.setCell(3, 3, 2);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'test02_second')
-data.setCell(4, 2, 'practice.Testng1')
+data.setCell(4, 1, 'test_04fourth')
+data.setCell(4, 2, 'practice.Testng2')
 data.setCell(4, 3, 1);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'test03_third')
-data.setCell(5, 2, 'practice.Testng2')
-data.setCell(5, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 ms</span>
+              <span class="suite-total-time">Total running time: 19 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -315,9 +303,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">practice.Testng3</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">test05_fifth</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -333,29 +328,25 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test02_second</span>
-                <span class="method-start">14 ms</span>
+                <span class="method-start">16 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">practice.Testng2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">test03_third</span>
-                <span class="method-start">20 ms</span>
+                <span class="method-start">24 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_04fourth</span>
-                <span class="method-start">23 ms</span>
+                <span class="method-start">28 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">practice.Testng3</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">test05_fifth</span>
-                <span class="method-start">215 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">test06_sixth</span>
-                <span class="method-start">218 ms</span>
+                <span class="method-start">227 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

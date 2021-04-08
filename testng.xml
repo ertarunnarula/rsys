@@ -10,7 +10,11 @@
 
 	<test name="Test2">
 		<classes>
-			<class name="practice.Testng3" />
+			<class name="practice.Testng3" >
+				<methods>
+					<exclude name="test05_fifth"/>
+				</methods>
+			</class>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
