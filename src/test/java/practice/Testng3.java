@@ -9,7 +9,7 @@ public class Testng3 {
 		System.out.println("This is the fifth test method");
 	}
 	
-	@Test
+	@Test(groups= {"Nirvana"})
 	public void test06_sixth() {
 		System.out.println("This is the sixth test method");
 	}
