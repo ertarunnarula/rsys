@@ -1,39 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="6" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="90" started-at="2021-04-09T01:38:55 IST" finished-at="2021-04-09T01:38:55 IST">
+  <suite name="Suite" duration-ms="18" started-at="2021-04-09T02:05:47 IST" finished-at="2021-04-09T02:05:47 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="33" started-at="2021-04-09T01:38:55 IST" finished-at="2021-04-09T01:38:55 IST">
-      <class name="practice.Testng2">
-        <test-method status="PASS" signature="test03_third()[pri:0, instance:practice.Testng2@3632be31]" name="test03_third" duration-ms="0" started-at="2021-04-09T01:38:55 IST" finished-at="2021-04-09T01:38:55 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test03_third -->
-        <test-method status="PASS" signature="test_04fourth()[pri:0, instance:practice.Testng2@3632be31]" name="test_04fourth" duration-ms="0" started-at="2021-04-09T01:38:55 IST" finished-at="2021-04-09T01:38:55 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_04fourth -->
-      </class> <!-- practice.Testng2 -->
-      <class name="practice.Testng1">
-        <test-method status="PASS" signature="test01_first()[pri:0, instance:practice.Testng1@56235b8e]" name="test01_first" duration-ms="4" started-at="2021-04-09T01:38:55 IST" finished-at="2021-04-09T01:38:55 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test01_first -->
-        <test-method status="PASS" signature="test02_second()[pri:0, instance:practice.Testng1@56235b8e]" name="test02_second" duration-ms="0" started-at="2021-04-09T01:38:55 IST" finished-at="2021-04-09T01:38:55 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test02_second -->
-      </class> <!-- practice.Testng1 -->
+    <test name="Test" duration-ms="18" started-at="2021-04-09T02:05:47 IST" finished-at="2021-04-09T02:05:47 IST">
     </test> <!-- Test -->
-    <test name="Test2" duration-ms="1" started-at="2021-04-09T01:38:55 IST" finished-at="2021-04-09T01:38:55 IST">
-      <class name="practice.Testng3">
-        <test-method status="PASS" signature="test06_sixth()[pri:0, instance:practice.Testng3@7b49cea0]" name="test06_sixth" duration-ms="0" started-at="2021-04-09T01:38:55 IST" finished-at="2021-04-09T01:38:55 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test06_sixth -->
-      </class> <!-- practice.Testng3 -->
-    </test> <!-- Test2 -->
   </suite> <!-- Suite -->
 </testng-results>

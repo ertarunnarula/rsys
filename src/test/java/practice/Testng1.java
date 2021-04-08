@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class Testng1 {
 	
-	@Test
+	@Test(invocationCount = 3)
 	public void test01_first() {
 		System.out.println("This is the first test method");
 	}
